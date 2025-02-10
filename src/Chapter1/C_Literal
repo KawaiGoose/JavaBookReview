@@ -1,0 +1,48 @@
+
+//Literal = 字面量，代码中直接写出固定值
+int a = 10;       // 这里的 10 就是一个整数字面量（int literal）
+double pi = 3.14; // 这里的 3.14 是一个浮点数字面量（double literal）
+char c = 'A';     // 这里的 'A' 是一个字符字面量（char literal）
+boolean flag = true; // 这里的 true 是一个布尔字面量（boolean literal）
+
+//Integer Data Type
+byte occupy 1 byte in memory (8 bit) -127 to 128
+short occupy 2 byte in memory (16 bit)
+int occupy 4 byte in memory (32 bit) // the expression + produce a 32 bit result. use (short) to cut down bits
+long occupy 8 byte in memory (64 bit) specify with f or F.
+//as long as there exist one long variable in the expression,then the result should turn to be long
+
+//Floating Point Data Type
+float 单精度, specify with f or F
+double 双精度, by default
+exponent 指数, when you want a significant large or small number, write them with an exponent, follow by e or E 科学计数法
+(etg. double distance = 1.498E8)
+//除法计算出的结果都是doule默认浮点类型
+//Java中double除以零不会抛出异常，而是返回Infinity正无穷或-Infinity负无穷
+
+//implicit and explicit casting
+隐式转换,转换方向是“小 → 大”，小的类型可以自动转换为更大的类型
+1. 先判断优先度：double, float, long 哪个在前面出现，另一个就转换为哪个。
+2. 再以 byte - short - int - long - float - double的顺序转换。
+
+显示转换，从大范围类型转换到小范围类型（需要强制转换）
+1. 使用String.或者Integer.Float.
+2. 使用(short) (int) -- explicit casting
+3. Object类可以储存任意类型的型号
+
+例如：short a = 5, b = 10, c = 0;
+    both a and b is short, when we a + b, the expression "+" it produces a 32-bit result,
+    the compiler can't store this value in c,
+    as c is only 16-bits long.
+    Now that we use c = (short)(a + b) as result
+
+//-----------------------------------------------------------------------
+//prefix and postfix increase operation
+int b = ++a; a 先加 1，然后 b = a
+int y = x++;  y 先等于 x，然后 x 再加 1
+
+lhs op= rhs
+lhs = lhs op (rhs)
+     ↓
+count += 5
+count = count + 5

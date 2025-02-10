@@ -1,0 +1,26 @@
+//Coding philosophy set up
+Try it out --> make mistake is a great way to learn.
+The more you practice the better you become, finally you'll be fully-fledged.
+
+//compiler, interpreter;
+//JDK = compiler + debugger + JRE,
+//JRE = .jar library + JVM.
+.java --> compiler --> .class
+                          ↓
+                   Java Virtual Machine
+                  (including interpreter)
+                          ↓ the interpreter handle communication with the operating system.
+                            it analyses the byte codes and carries out the operations.
+                 Computer Operating System
+
+//---------------------------------------------------------------------------
+//public, private = accessibility， accessible from outside of class
+//static = method can be executed even no class objects have been created
+Encapusulation, refer to "hiding items" (variables and methods) within an object
+                by specifying them as "private" in the definition of the class.
+                The "internal code can be changed in any way that you want".
+
+public, means its globally accessiable
+static, means ensure its accessibale even though no objects of the class exist. --> There is no object in class System.
+
+
